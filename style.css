@@ -19,6 +19,7 @@
 body{
     background-color: var(--Light-Grayish-Violet);
     font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
     
 }
 input{
@@ -53,7 +54,7 @@ h1{
     height: 30rem;
     width: 100%;
     position: absolute;
-    top: 77%;
+    top: 80%;
     left: 50%;
     opacity: 10%;
 }
