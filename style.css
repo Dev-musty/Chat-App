@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Pale-Violet: hsl(276, 100%, 81%);
+    --Moderate-Violet: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet: hsl(271, 15%, 43%); 
+    --Grayish-Blue: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+    --gradient: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet: hsl(270, 20%, 96%);
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+body{
+    background-color: var(--Light-Grayish-Violet);
+    font-family: "Rubik", sans-serif;
+    
+}
+input{
+    background-color: var(--Grayish-Blue);
+    border: none;
+    border-radius: 30px;
+    width: 85%;
+    height: 40px;
+    padding-left: 20px;
+    margin: 10px 10px 10px;
+}
+
+h1{
+    font-size: 0.9rem;
+    
+}
+
+/* Oval design */
+.top-oval{
+    background-image: var(--gradient);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 30rem;
+    width: 100%;
+    position: absolute;
+    right: 50%;
+}
+.bottom-oval{
+    background-color: var(--Dark-Grayish-Violet);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 30rem;
+    width: 100%;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    opacity: 10%;
+}
+
+/* Iphone frame*/
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+.iphone{
+    border-radius: 40px;
+    background-color: var(--White);
+    width: 280px;
+    height: 568px;
+    padding: 15px;
+}
+
+.notch{
+    background-color: var(--White);
+    border-radius: 30px;
+    height: 30px;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: -15%;
+}
+
+/* Chat header */
+.chat{
+    background-color: var(--Light-Grayish-Violet);
+    border-radius: 25px;
+}
+.header{
+    color: var(--White);
+    background-image: var(--gradient);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+.head{
+    display: flex;
+    align-items: center;
+    padding: 30px 10px 15px ;
+}
+.head i{
+    margin-right: 10px;
+}
+.head img{
+    width: 10%;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.user{
+    margin-right: 70px;
+}
+.user p{
+    font-size: 0.7rem;
+    color: var(--Pale-Violet);
+}
+
+/* Bubble */
+.bubble{
+    background-color: var(--Desaturated-Dark-Violet);
+    padding: 10px;
+    font-size: 0.7rem;
+}
+.left{
+    background-color: var(--Dark-Grayish-Violet);
+    color: var(--Moderate-Violet);
+    border-radius: 13px;
+    width: 55%;
+    border-bottom-left-radius: 3px;
+    margin: 10px 10px 0;
+}
+
+.right-chat{
+    width: 100%;
+}
+.right-chat > img{
+    border-radius: 10px;
+    width: 30px;
+    margin: 20px 0 0;
+    position: relative;
+    left: 60%;
+}
+.right{
+    background-color: var(--White);
+    color: var(--Desaturated-Dark-Violet);
+    border-radius: 13px;
+    width: 46%;
+    border-bottom-right-radius: 3px;
+    margin: 10px 10px 0 121px ;
+    
+}
+.right-align{
+    background-color: var(--White);
+    color: var(--Desaturated-Dark-Violet);
+    border-radius: 20px;
+    width: 36%;
+    border-bottom-right-radius: 5px;
+    margin: 10px 10px 0 149px;
+    text-align: right;
+}
+
+.pricing{
+    background-image: var(--gradient);
+    display: flex;
+    align-items: center;
+    width: 65%;
+    color: var(--White);
+}
+.pricing p {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.pricing p i{
+    font-size: 1rem;
+}
+.pricing p span{
+    margin-left: 40px;
+}
+
+.per-hr p span{
+    margin-left: 70px;
+}
+
+/* Textbox */
+.type{
+    position: relative;
+}
+.fa-angle-right{
+    position: absolute;
+    left: 240px;
+    bottom: 17px;
+   font-size: 1.6rem;
+}
+
+/* Content section */
+.content{
+    text-align: center;
+    margin: 50px auto;
+}
+.content h2{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+.content p{
+    margin: 20px 50px 0;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 1024px){
+    body{
+        overflow: hidden;
+    }
+    h1{
+        font-size: 0.8rem;
+    }
+    
+    /* Oval design */
+    .top-oval{
+        height: 34rem;
+        width: 45%;
+        right: 65%;
+    }
+    .bottom-oval{
+        height: 36rem;
+        width: 45%;
+        left: 75%;
+        top: 17%;
+    }
+    /* Iphone frame*/
+    .container{
+        padding-top: 5rem;
+    }
+    .iphone{
+        border-radius: 35px;
+        margin: 0 20% 0 0%;
+        width: 260px;
+        height: 513px;
+        padding: 10px;
+    }
+    .notch{
+        height: 30px;
+        top: -9px;
+    }
+
+    /* Bubble */
+    .bubble{
+        font-size: 0.6rem;
+        padding: 8px;
+    }
+    
+
+    /* Textbox */
+    .fa-angle-right{
+        left: 230px;
+    }
+
+    /* Content section */
+    .content{
+        margin-left: 40px;
+        text-align: left;
+        position: absolute;
+        top: 35%;
+       left: 55%;
+    }
+    .content p{
+        color: var(--Dark-Grayish-Violet);
+        margin: 20px 0 0;
+        width: 82%;
+        line-height: 1.5;
+        font-size: 1rem;
+        font-weight: 500;
+        
+    }
+    .content h2{
+        font-size: 2.7rem;
+    }
+}
+
